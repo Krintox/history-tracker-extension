@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>History Tracker</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>History Tracker</h1>
+      <div class="focus-score">
+        <span id="score">--</span>
+        <small>Focus Score</small>
+      </div>
+    </header>
+    
+    <div class="stats">
+      <div class="stat">
+        <span id="today-time">0</span>
+        <small>minutes today</small>
+      </div>
+      <div class="stat">
+        <span id="productive-time">0</span>
+        <small>productive</small>
+      </div>
+      <div class="stat">
+        <span id="distracting-time">0</span>
+        <small>distracting</small>
+      </div>
+    </div>
+    
+    <button id="view-dashboard">View Full Dashboard</button>
+    <button id="settings">Settings</button>
+  </div>
+  
+  <script src="scripts/popup.js" type="module"></script>
+</body>
+</html>

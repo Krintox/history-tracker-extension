@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>History Tracker Settings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>History Tracker Settings</h1>
+  
+  <div class="form-group">
+    <label for="server-url">Backend Server URL</label>
+    <input type="text" id="server-url" placeholder="https://your-server.com/api">
+  </div>
+  
+  <div class="form-group">
+    <label for="sync-frequency">Sync Frequency</label>
+    <select id="sync-frequency">
+      <option value="5">5 minutes</option>
+      <option value="15" selected>15 minutes</option>
+      <option value="30">30 minutes</option>
+      <option value="60">1 hour</option>
+    </select>
+  </div>
+  
+  <div class="form-group">
+    <label>
+      <input type="checkbox" id="enable-wayback"> 
+      Enable Wayback Machine archiving
+    </label>
+  </div>
+  
+  <div class="form-group">
+    <label>
+      <input type="checkbox" id="track-time" checked> 
+      Track time spent on websites
+    </label>
+  </div>
+  
+  <button id="save">Save Settings</button>
+  
+  <script src="scripts/options.js" type="module"></script>
+</body>
+</html>
